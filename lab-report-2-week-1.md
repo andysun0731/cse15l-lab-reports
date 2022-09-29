@@ -52,6 +52,17 @@ Sun Jan 02, 2022 11:28pm - Prepping cs15lfa22
 ---
 
 ## Step 3: Trying Some Commands
+*Try running some commands
+
+![Image](file:///Users/andysun/Desktop/%E6%88%AA%E5%B1%8F2022-09-29%20%E4%B8%8B%E5%8D%881.56.29.png)
+
+*This is an exmaple when running command `cat /home/linux/ieng6/cs15lfa22/public/hello.txt`
+
+![Image](file:///Users/andysun/Pictures/Photos%20Library.photoslibrary/private/com.apple.Photos/ExternalEditSessions/F1A61D66-5FED-4854-B76C-2B41BCD98C0D/%E6%88%AA%E5%B1%8F2022-09-28%20%E4%B8%8B%E5%8D%884.57.47.jpeg)
+
+---
+
+## Step 4: Moving Files with `scp`
 
 
 
