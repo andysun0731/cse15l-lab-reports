@@ -7,7 +7,7 @@
 
 * This is what looks like when open up VSCode
 
-![Image](file:///Users/andysun/Desktop/%E6%88%AA%E5%B1%8F2022-09-29%20%E4%B8%8B%E5%8D%881.19.46.png)
+![Image](screenshot1.png)
 
 ---
 
