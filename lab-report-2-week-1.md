@@ -112,7 +112,18 @@ $ mkdir .ssh
 ![Image](file:///Users/andysun/Desktop/CSE15L%20Week1%20Lab/%E6%88%AA%E5%B1%8F2022-09-28%20%E4%B8%8B%E5%8D%885.23.10.png)
 * This shows that you succesfully set up the ssh keys
 
+---
 
+## Step 6: Optimizing Remote Running
+* We can use command in a quote at the end of an `ssh` command to run the server directly after logging in
+
+![Image](file:///Users/andysun/Desktop/%E6%88%AA%E5%B1%8F2022-09-29%20%E4%B8%8B%E5%8D%883.28.26.png)
+
+* We can also use semi colons to run multiple commands at the same time
+
+![Image](file:///Users/andysun/Desktop/%E6%88%AA%E5%B1%8F2022-09-29%20%E4%B8%8B%E5%8D%883.30.14.png)
+
+* Up arrow on the keyboard can recall the last command we typed in
 
 
 
