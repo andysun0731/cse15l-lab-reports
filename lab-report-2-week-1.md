@@ -46,18 +46,17 @@ Sun Jan 02, 2022 11:28pm - Prepping cs15lfa22
 
 5. Now the computer is connected to a computer at CSE Basement, this is what looks like when the local computer is successfully connected to a server:
 
-![Image](file:///Users/andysun/Desktop/%E6%88%AA%E5%B1%8F2022-09-29%20%E4%B8%8B%E5%8D%881.49.26.png)
+![Image](screenshot2.png)
 
 ---
 
 ## Step 3: Trying Some Commands
 * Try running some commands
 
-![Image](file:///Users/andysun/Desktop/%E6%88%AA%E5%B1%8F2022-09-29%20%E4%B8%8B%E5%8D%881.56.29.png)
-
+![Image](screenshot3.png)
 * This is an exmaple when running command `cat /home/linux/ieng6/cs15lfa22/public/hello.txt`
 
-![Image](file:///Users/andysun/Pictures/Photos%20Library.photoslibrary/private/com.apple.Photos/ExternalEditSessions/F1A61D66-5FED-4854-B76C-2B41BCD98C0D/%E6%88%AA%E5%B1%8F2022-09-28%20%E4%B8%8B%E5%8D%884.57.47.jpeg)
+![Image](screenshot4.png)
 
 ---
 
@@ -81,7 +80,7 @@ class WhereAmI {
 
 4. Run the program in the ieng6 compyter using `javac` and `java` commands
 
-![Image](file:///Users/andysun/Pictures/Photos%20Library.photoslibrary/private/com.apple.Photos/ExternalEditSessions/08CB99C8-D0B3-41EE-9FFF-D3079895CBE6/%E6%88%AA%E5%B1%8F2022-09-28%20%E4%B8%8B%E5%8D%885.11.58.jpeg)
+![Image](screenshot5.png)
 
 * This is what looks like when I finish running the program on ieng6 computer
 
@@ -90,9 +89,9 @@ class WhereAmI {
 ## Step 5: Setting an SSH Key
 1. Type in the command `ssh-keygen` into the terminal
 
-![Image](file:///Users/andysun/Pictures/Photos%20Library.photoslibrary/private/com.apple.Photos/ExternalEditSessions/8FF15A76-1EC7-451C-92B3-7DA4B684946F/%E6%88%AA%E5%B1%8F2022-09-28%20%E4%B8%8B%E5%8D%885.22.19.jpeg)
+![Image](screenshot6.png)
 
-![Image](file:///Users/andysun/Pictures/Photos%20Library.photoslibrary/private/com.apple.Photos/ExternalEditSessions/5972C58A-FC48-4788-AD00-F12A9836DCF9/%E6%88%AA%E5%B1%8F2022-09-28%20%E4%B8%8B%E5%8D%885.22.35.jpeg)
+![Image](screenshot7.png)
 
 * When giving the message `Enter file in which to save the key`, press enter to go to the default pass
 * The first step will create two files on the system. One is the private key and the other is the public key that are stored in the `.ssh` directory in the computer
@@ -109,7 +108,7 @@ $ ssh cs15lfa22zz@ieng6.ucsd.edu
 $ mkdir .ssh
 ```
 
-![Image](file:///Users/andysun/Desktop/CSE15L%20Week1%20Lab/%E6%88%AA%E5%B1%8F2022-09-28%20%E4%B8%8B%E5%8D%885.23.10.png)
+![Image](screenshot8.png)
 * This shows that you succesfully set up the ssh keys
 
 ---
@@ -117,11 +116,11 @@ $ mkdir .ssh
 ## Step 6: Optimizing Remote Running
 * We can use command in a quote at the end of an `ssh` command to run the server directly after logging in
 
-![Image](file:///Users/andysun/Desktop/%E6%88%AA%E5%B1%8F2022-09-29%20%E4%B8%8B%E5%8D%883.28.26.png)
+![Image](screenshot9.png)
 
 * We can also use semi colons to run multiple commands at the same time
 
-![Image](file:///Users/andysun/Desktop/%E6%88%AA%E5%B1%8F2022-09-29%20%E4%B8%8B%E5%8D%883.30.14.png)
+![Image](screenshot10.png)
 
 * Up arrow on the keyboard can recall the last command we typed in
 
