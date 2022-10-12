@@ -87,7 +87,7 @@ class WhereAmI {
 ---
 
 ## Step 5: Setting an SSH Key
-1. Type in the command `ssh-keygen` into the terminal
+1. Type in the command `ssh-keygen` into the terminal (After doing this, we no longer need passwords to log into the server)
 
 ![Image](screenshot6.png)
 
@@ -110,6 +110,9 @@ $ mkdir .ssh
 
 ![Image](screenshot8.png)
 * This shows that you succesfully set up the ssh keys
+
+![Image](screenshot11.png)
+* Now you no longer need password when logging in the server!
 
 ---
 
