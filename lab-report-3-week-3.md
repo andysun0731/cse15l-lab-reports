@@ -52,5 +52,11 @@ class SearchEngine {
     }
 }
 ```
-* First I want to try using the command `/add?s=pineapple`
-![Image](screenshot12)
+1. First I want to try using the command `/add?s=pineapple`
+![Image](screenshot12.png)
+* We can see that whe we type in `/add?s=pineapple` we are calling the method `handleRequest`
+* Since the URL contains "/add", we fullfill the if statement and split the url by "=" and put them into a String array
+* Then we detect that the 0 index of the String array is s, then we put index 1 which is the content we want into a empty String and return it
+
+2. Next Let's try the command `/add?s=apple`
+!
