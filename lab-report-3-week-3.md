@@ -53,3 +53,4 @@ class SearchEngine {
 }
 ```
 * First I want to try using the command `/add?s=pineapple`
+![Image](screenshot12)
