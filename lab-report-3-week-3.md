@@ -52,11 +52,18 @@ class SearchEngine {
     }
 }
 ```
-1. First I want to try using the command `/add?s=pineapple`
+1. First I want to try using the command `/add?s=pineapple` (we are using this command to add pinapple)
 ![Image](screenshot12.png)
 * We can see that whe we type in `/add?s=pineapple` we are calling the method `handleRequest`
 * Since the URL contains "/add", we fullfill the if statement and split the url by "=" and put them into a String array
 * Then we detect that the 0 index of the String array is s, then we put index 1 which is the content we want into a empty String and return it
 
-2. Next Let's try the command `/add?s=apple`
-!
+2. Next Let's try the command `/add?s=apple` (we are using this command to add apple)
+![Image](screenshot13.png)
+* Same as the command above, we are calling the method `handleRequest`
+* Since the URL contains "/add", we fullfill the if statement and split the url by "=" and put them into a String array
+* Then we detect that the 0 index of the String array is s, then we put index 1 which is the content we want into the String *str*
+* Since there is a string pinapple already in *str*, the output will be "pinneapple apple"
+
+3. Finally try using the command `/search?s=app` (we are using the command to find the contents we added that contains app in it)
+
