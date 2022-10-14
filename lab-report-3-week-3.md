@@ -108,10 +108,43 @@ static void reverseInPlace(int[] arr) {
 * This is what the code looks like after I fixed it.
 
 4. Connection between bug and symptom:
-* Since the bug will cause error in the middle index, we can see that the error in the test comes at index 2 which is exactly the middle index. The error message said the value in index 2 expected: <4>, but was actually <5>. This is because the value in index 1 is already being changed by the last operation of the loop and the value in the index 1 now is actually the original index 3 value which is 5.
+    * Since the bug will cause error in the middle index, we can see that the error in the test comes at index 2 which is exactly the middle index. The error message said the value in index 2 expected: <4>, but was actually <5>. This is because the value in index 1 is already being changed by the last operation of the loop and the value in the index 1 now is actually the original index 3 value which is 5.
 
 * The second bug I choose is *filter* method in the file *ListExamples.java*
 1. Faliure-inducting input:
+![Image](screenshot17.png)
+2. Symptom: 
+![Image](screenshot18.png)
+3. The bug:
+```
+static List<String> filter(List<String> list, StringChecker sc) {
+    List<String> result = new ArrayList<>();
+    for(String s: list) {
+      if(sc.checkString(s)) {
+        result.add(0, s);
+      }
+    }
+    return result;
+  }
+```
+* The problem for this code is that the order is messed up because the part that `result.add(0, s)` which will let the every new String being added to index 0.
+```
+static List<String> filter(List<String> list, StringChecker sc) {
+    List<String> result = new ArrayList<>();
+    int i = 0;
+    for(String s: list) {
+      if(sc.checkString(s)) {
+        result.add(i, s);
+        i ++;
+      }
+    }
+    return result;
+  }
+```
+* This is the code after I fixed it
+
+4. The connection between bug and symptom:
+    * I am adding the Strings "America" "Japan" and "California" into the string arraylist that I created, and I want to choose the string's length that is gretare than 5. So in the same order, the output should be <[America, California]> but was <[California, America]>. This is because the code `result.add(i, s);` in the method let "California" comes into index 0 which messed up the order.
 
 
 
