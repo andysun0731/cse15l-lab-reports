@@ -78,4 +78,7 @@ class SearchEngine {
 ---
 
 ## Part 2
+* The first bug I found is *reverseInPlace* method in the file *ArrayExamples.java*
+* Failure-inducting input:
+
 
