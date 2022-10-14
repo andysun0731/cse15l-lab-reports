@@ -66,4 +66,16 @@ class SearchEngine {
 * Since there is a string pinapple already in *str*, the output will be "pinneapple apple"
 
 3. Finally try using the command `/search?s=app` (we are using the command to find the contents we added that contains app in it)
+![Image](screenshot14.png)
+* In this command, we are also calling the method `handleRequest`
+* Since the URL contains "/search', we fullfill the else statement
+* Then I create a new String array called *answer* which contains the contents in *str* and split by space between the contents
+* After that I also split the URL by "=" and put them into a String array called *parameters*
+* The I use a for loop to find all the elements in the *answer* array that if any of them matches the inde 1 of parameter array
+* For every matched element, I add it into a new empty String called output
+* Finally return the output
+
+---
+
+## Part 2
 
