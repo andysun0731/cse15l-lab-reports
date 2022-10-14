@@ -79,6 +79,40 @@ class SearchEngine {
 
 ## Part 2
 * The first bug I found is *reverseInPlace* method in the file *ArrayExamples.java*
-* Failure-inducting input:
+1. Failure-inducting input:
+![Image](screenshot15.png)
+2. Symptom:
+![Image](screenshot16.png)
+3. The bug:
+```
+static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
+```
+* We can see from the above code that, the code is reversing in the exact same array as the input so it will doing well until the middle index of the array, for exmaple the length of the array is 4, when the for loop coming to index 2, we can find out that when we trying to change index 2 with the value in index 1, index 1 has been changed to the value of index 2 in the last operation of the loop. 
+```
+static void reverseInPlace(int[] arr) {
+    int[] answer = new int[arr.length];
+    int index = 0;
+    for(int i = arr.length - 1; i >=0; i --){
+      answer[index] = arr[i];
+      index ++;
+    }
+    for(int i = 0; i < answer.length; i ++){
+      arr[i] = answer[i];
+    }
+  }
+``` 
+* This is what the code looks like after I fixed it.
+
+4. Connection between bug and symptom:
+* Since the bug will cause error in the middle index, we can see that the error in the test comes at index 2 which is exactly the middle index. The error message said the value in index 2 expected: <4>, but was actually <5>. This is because the value in index 1 is already being changed by the last operation of the loop and the value in the index 1 now is actually the original index 3 value which is 5.
+
+* The second bug I choose is *filter* method in the file *ListExamples.java*
+1. Faliure-inducting input:
+
+
 
 
