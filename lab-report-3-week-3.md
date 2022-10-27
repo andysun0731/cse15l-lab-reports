@@ -52,7 +52,9 @@ class SearchEngine {
     }
 }
 ```
-1. First I want to try using the command `/add?s=pineapple` (we are using this command to add pinapple)
+1. First Let's try just using the command `/`
+
+3. First I want to try using the command `/add?s=pineapple` (we are using this command to add pinapple)
 ![Image](screenshot12.png)
 * We can see that whe we type in `/add?s=pineapple` we are calling the method `handleRequest`
 * Since the URL contains "/add", we fullfill the if statement and split the url by "=" and put them into a String array
