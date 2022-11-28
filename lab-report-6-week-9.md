@@ -56,7 +56,7 @@ Command: `set -e`, Standard Output: N/A, Standard Error: 0
 
 Command: `rm -rf student-submission`, Standard Output: N/A, Code: 0 
 
-Command: `git clone $1 student-submission`, Standard Output: N/A, Code: 0 
+Command: `git clone $1 student-submission`, Standard Output: `Cloning into 'student-submission'...`, Code: 0 
 
 Command: `cp TestListExamples.java student-submission`, Standard Output: N/A, Code: 0 
 
